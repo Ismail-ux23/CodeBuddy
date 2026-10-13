@@ -2,7 +2,7 @@
 name = "codebuddy-api"
 version = "0.1.0"
 requires-python = ">=3.12,<3.15"
-dependencies = ["Flask>=3.1,<4", "Flask-SQLAlchemy>=3.1,<4", "Flask-Login>=0.6,<1", "Flask-Session>=0.8,<1", "Flask-WTF>=1.2,<2", "Flask-Limiter>=3.12,<5", "SQLAlchemy>=2.0,<3", "alembic>=1.16,<2", "psycopg[binary]>=3.2,<4", "pgvector>=0.4,<1", "celery[redis]>=5.5,<6", "redis>=5,<7", "argon2-cffi>=23,<26", "pydantic[email]>=2.11,<3", "google-genai==2.28.0", "gunicorn>=23,<24", "tree-sitter>=0.25,<0.26", "tree-sitter-python>=0.23,<0.26", "tree-sitter-javascript>=0.23,<0.26", "tree-sitter-typescript>=0.23,<0.24", "pathspec>=0.12,<1", "python-dotenv>=1,<2", "cryptography>=46.0.5,<47"]
+dependencies = ["Flask>=3.1,<4", "Flask-SQLAlchemy>=3.1,<4", "Flask-Login>=0.6,<1", "Flask-Session>=0.8,<1", "Flask-WTF>=1.2,<2", "Flask-Limiter>=3.12,<5", "SQLAlchemy>=2.0,<3", "alembic>=1.16,<2", "psycopg[binary]>=3.2,<4", "pgvector>=0.4,<1", "celery[redis]>=5.5,<6", "redis>=5,<7", "argon2-cffi>=23,<26", "pydantic[email]>=2.14.0,<3", "google-genai==2.28.0", "gunicorn>=23,<24", "tree-sitter>=0.25,<0.26", "tree-sitter-python>=0.23,<0.26", "tree-sitter-javascript>=0.23,<0.26", "tree-sitter-typescript>=0.23,<0.24", "pathspec>=0.12,<1", "python-dotenv>=1,<2", "cryptography>=46.0.5,<47"]
 [dependency-groups]
 dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
 [tool.pytest.ini_options]
