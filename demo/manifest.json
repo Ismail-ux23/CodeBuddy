@@ -1,0 +1,48 @@
+{
+  "name": "Quiz Garden",
+  "snapshot_id": "c7bbe7f17aeea441",
+  "files": [
+    {
+      "id": "b335630551682c19",
+      "relative_path": "README.md",
+      "language": "md",
+      "line_count": 27
+    },
+    {
+      "id": "568470d013cd12e4",
+      "relative_path": "app.py",
+      "language": "py",
+      "line_count": 8
+    },
+    {
+      "id": "dcfeaa5ac3dffd54",
+      "relative_path": "models.py",
+      "language": "py",
+      "line_count": 10
+    },
+    {
+      "id": "4d7c51b1efe9043e",
+      "relative_path": "requirements.txt",
+      "language": "txt",
+      "line_count": 2
+    },
+    {
+      "id": "4b0667727df51025",
+      "relative_path": "routes.py",
+      "language": "py",
+      "line_count": 32
+    },
+    {
+      "id": "caf9eeded2f0ded2",
+      "relative_path": "services/scoring.py",
+      "language": "py",
+      "line_count": 8
+    },
+    {
+      "id": "639d4ed944091dc3",
+      "relative_path": "tests/test_scoring.py",
+      "language": "py",
+      "line_count": 11
+    }
+  ]
+}

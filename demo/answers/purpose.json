@@ -1,0 +1,44 @@
+{
+  "id": "purpose",
+  "question": "What does this project do?",
+  "label": "Precomputed demo answer",
+  "answer_status": "answered",
+  "claims": [
+    {
+      "text": "Quiz Garden is a small educational Flask app for submitting Python quiz answers and receiving scores.",
+      "evidence_kind": "observed",
+      "source_ids": [
+        "b335630551682c19:1"
+      ]
+    },
+    {
+      "text": "The app factory registers the quiz Blueprint. Scoring uses an in-memory answer key.",
+      "evidence_kind": "observed",
+      "source_ids": [
+        "568470d013cd12e4:1"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "source_id": "b335630551682c19:1",
+      "file_id": "b335630551682c19",
+      "snapshot_id": "c7bbe7f17aeea441",
+      "path": "README.md",
+      "start_line": 1,
+      "end_line": 4
+    },
+    {
+      "source_id": "568470d013cd12e4:1",
+      "file_id": "568470d013cd12e4",
+      "snapshot_id": "c7bbe7f17aeea441",
+      "path": "app.py",
+      "start_line": 1,
+      "end_line": 8
+    }
+  ],
+  "limitations": [
+    "This is an educational fixture. It has not been executed by CodeBuddy."
+  ],
+  "follow_up_questions": []
+}

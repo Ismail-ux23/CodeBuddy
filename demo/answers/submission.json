@@ -1,0 +1,74 @@
+{
+  "id": "submission",
+  "question": "What happens when a quiz is submitted?",
+  "label": "Precomputed demo answer",
+  "answer_status": "answered",
+  "claims": [
+    {
+      "text": "The POST submission route checks for a name in the session and rejects signed-out requests with HTTP 401.",
+      "evidence_kind": "observed",
+      "source_ids": [
+        "4b0667727df51025:16"
+      ]
+    },
+    {
+      "text": "It validates the answers object, calls score_quiz, and returns 404 when the quiz does not exist.",
+      "evidence_kind": "observed",
+      "source_ids": [
+        "4b0667727df51025:20"
+      ]
+    },
+    {
+      "text": "The scoring service compares submitted answers against three expected values and returns correct, total, and percentage.",
+      "evidence_kind": "observed",
+      "source_ids": [
+        "caf9eeded2f0ded2:1"
+      ]
+    },
+    {
+      "text": "A Submission data class shapes the HTTP 201 response. This route does not persist the submission.",
+      "evidence_kind": "observed",
+      "source_ids": [
+        "4b0667727df51025:26"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "source_id": "4b0667727df51025:16",
+      "file_id": "4b0667727df51025",
+      "snapshot_id": "c7bbe7f17aeea441",
+      "path": "routes.py",
+      "start_line": 16,
+      "end_line": 19
+    },
+    {
+      "source_id": "4b0667727df51025:20",
+      "file_id": "4b0667727df51025",
+      "snapshot_id": "c7bbe7f17aeea441",
+      "path": "routes.py",
+      "start_line": 20,
+      "end_line": 25
+    },
+    {
+      "source_id": "caf9eeded2f0ded2:1",
+      "file_id": "caf9eeded2f0ded2",
+      "snapshot_id": "c7bbe7f17aeea441",
+      "path": "services/scoring.py",
+      "start_line": 1,
+      "end_line": 8
+    },
+    {
+      "source_id": "4b0667727df51025:26",
+      "file_id": "4b0667727df51025",
+      "snapshot_id": "c7bbe7f17aeea441",
+      "path": "routes.py",
+      "start_line": 26,
+      "end_line": 27
+    }
+  ],
+  "limitations": [
+    "This is an educational fixture. It has not been executed by CodeBuddy."
+  ],
+  "follow_up_questions": []
+}

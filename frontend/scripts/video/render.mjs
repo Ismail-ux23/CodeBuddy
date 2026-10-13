@@ -1,0 +1,11 @@
+import { chromium } from '@playwright/test';
+import { readFile, writeFile } from 'node:fs/promises';
+const browser = await chromium.launch({channel:'chrome',headless:true});
+const page = await browser.newPage({viewport:{width:3840,height:2160}});
+await page.setContent(await readFile(new URL('./hero-canvas.html',import.meta.url),'utf8'));
+const poster=await page.locator('canvas').screenshot();
+await writeFile(new URL('../../public/video/code-orbit-4k-poster.png',import.meta.url),poster);
+const data=await page.evaluate(()=>window.record());
+await writeFile(new URL('../../public/video/code-orbit-4k.mp4',import.meta.url),Buffer.from(data.split(',')[1],'base64'));
+await browser.close();
+console.log('Rendered original 12-second CodeBuddy hero video and poster.');

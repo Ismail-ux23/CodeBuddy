@@ -1,0 +1,59 @@
+{
+  "id": "onboarding",
+  "question": "Which files should I read first?",
+  "label": "Precomputed demo answer",
+  "answer_status": "answered",
+  "claims": [
+    {
+      "text": "Start with README.md for documented setup, then app.py for the application factory.",
+      "evidence_kind": "observed",
+      "source_ids": [
+        "b335630551682c19:6"
+      ]
+    },
+    {
+      "text": "Read routes.py for the HTTP workflow, followed by services/scoring.py for the scoring calculation.",
+      "evidence_kind": "observed",
+      "source_ids": [
+        "4b0667727df51025:16"
+      ]
+    },
+    {
+      "text": "Read models.py for the response shape and tests/test_scoring.py for three scoring cases.",
+      "evidence_kind": "observed",
+      "source_ids": [
+        "639d4ed944091dc3:1"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "source_id": "b335630551682c19:6",
+      "file_id": "b335630551682c19",
+      "snapshot_id": "c7bbe7f17aeea441",
+      "path": "README.md",
+      "start_line": 6,
+      "end_line": 15
+    },
+    {
+      "source_id": "4b0667727df51025:16",
+      "file_id": "4b0667727df51025",
+      "snapshot_id": "c7bbe7f17aeea441",
+      "path": "routes.py",
+      "start_line": 16,
+      "end_line": 27
+    },
+    {
+      "source_id": "639d4ed944091dc3:1",
+      "file_id": "639d4ed944091dc3",
+      "snapshot_id": "c7bbe7f17aeea441",
+      "path": "tests/test_scoring.py",
+      "start_line": 1,
+      "end_line": 11
+    }
+  ],
+  "limitations": [
+    "This is an educational fixture. It has not been executed by CodeBuddy."
+  ],
+  "follow_up_questions": []
+}

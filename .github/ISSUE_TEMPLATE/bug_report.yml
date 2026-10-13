@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a reproducible CodeBuddy problem.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include expected behavior and the affected commit. Do not include secrets or private source.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Use a minimal synthetic example.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, browser, Python/Node versions, Docker or local setup, and sanitized error messages.
