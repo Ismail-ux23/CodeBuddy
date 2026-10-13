@@ -1,5 +1,5 @@
 version = 1
-revision = 5
+revision = 3
 requires-python = ">=3.12, <3.15"
 resolution-markers = [
     "python_full_version >= '3.14'",
@@ -407,7 +407,7 @@ dev = [
 requires-dist = [
     { name = "alembic", specifier = ">=1.16,<2" },
     { name = "argon2-cffi", specifier = ">=23,<26" },
-    { name = "celery", extras = ["redis"], specifier = ">=5.5,<6" },
+    { name = "celery", extras = ["redis"], specifier = ">=5.6.3,<6" },
     { name = "cryptography", specifier = ">=46.0.5,<47" },
     { name = "flask", specifier = ">=3.1,<4" },
     { name = "flask-limiter", specifier = ">=3.12,<5" },
