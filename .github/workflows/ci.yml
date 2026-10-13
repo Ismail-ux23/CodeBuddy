@@ -26,7 +26,7 @@ jobs:
       TEST_REDIS_URL: redis://localhost:6379/4
       APP_SECRET_KEY: ci-only-key-not-a-production-secret-12345
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v4
         with: {node-version: '24', cache: npm, cache-dependency-path: frontend/package-lock.json}
       - uses: astral-sh/setup-uv@v6
